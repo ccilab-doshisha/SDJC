@@ -1,1 +1,0 @@
-UMLのFigure3D-2.epsで、Rectangleクラスのフィールドはheightとdepthになっているのですが、widthとdepthではないのでしょうか？

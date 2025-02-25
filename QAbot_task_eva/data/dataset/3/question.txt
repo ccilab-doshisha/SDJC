@@ -1,1 +1,0 @@
-ターミナルでsrcに移動した後lsコマンドを打つと、Operation not permittedと出ます。どうすれば良いでしょうか。

@@ -1,1 +1,0 @@
-中間課題のプログラミング でException in thread "main" java.lang.NullPointerExceptionとエラーが出ます.どうしたらいいですか.
