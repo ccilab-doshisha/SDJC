@@ -7,12 +7,12 @@ from transformers import T5Tokenizer, T5Config, T5ForConditionalGeneration
 nlp = spacy.load('ja_ginza')
 
 sentences = []
-for line in open('/home/chen/T5_mask_infilling/clinic_corpus.txt', 'r'):
+for line in open('./data/clinic_corpus.txt', 'r'):
     if line is not None:
         sentences.append(line.strip())
 
 
-T5_PATH = '/home/chen/T5_mask_infilling/torch_model_clinic' 
+T5_PATH = './torch_model_clinic' 
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu') 
 
