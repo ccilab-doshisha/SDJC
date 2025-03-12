@@ -45,7 +45,7 @@ The Japanese sentence embedding models trained by us are listed as following.
 | [MU-Kindai/Japanese-SimCSE-BERT-base-sup](https://huggingface.co/MU-Kindai/Japanese-SimCSE-BERT-base-sup) |
 | [MU-Kindai/Japanese-SimCSE-BERT-large-sup](https://huggingface.co/MU-Kindai/Japanese-SimCSE-BERT-large-sup) |
 
-## JCSE
+## SDJC
 ### Download data
 Wikipedia data and JSNLI data for contrastive learning can be downloaded from [here](/data/download_wiki.sh) and [here](/data/download_nli.sh):
 ```
