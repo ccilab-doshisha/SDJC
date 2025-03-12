@@ -1,8 +1,8 @@
 # Introduction
-This repository contains the data, code and models for our paper [JCSE: Contrastive Learning of Japanese Sentence Embeddings and Its Applications](https://arxiv.org/abs/2301.08193). It is built upon Pytorch and Huggingface.
+This repository contains the data, code and models for our paper (SDJC). It is built upon Pytorch and Huggingface.
 
 ## Overview
-We propose a novel Japanese sentence representation framework, JCSE for domain adaptation(derived from "Contrastive learning of Sentence Embeddings for Japanese"), that creates training data by generating sentences and synthesizing them with sentences available in a target domain. Specifically, a pre-trained data generator is finetuned to a target domain using our collected corpus. It is then used to generate contradictory sentence pairs that are used in contrastive learning with a two-stage training recipe for adapting a Japanese language model to a specific task in the target domain.
+Several backbone models pre-trained on general domain datasets can encode a sentence into a widely useful embedding. Such sentence embeddings can be further enhanced by domain adaptation that adapts a backbone model to a specific domain. However, domain adaptation for low-resource languages like Japanese is often difficult due to the scarcity of large-scale labeled datasets. To overcome this, this paper introduces SDJC (Self-supervised Domain adaptation for Japanese sentence embeddings with Contrastive learning) that utilizes a data generator to generate sentences, which have the same syntactic structure to a sentence in an unlabeled specific domain corpus but convey different semantic meanings. Generated sentences are then used to boost contrastive learning that adapts a backbone model to accurately discriminate sentences in the specific domain.
 
 ![overall image](/SDJC_overview.png)
 
@@ -126,10 +126,5 @@ For the relevant content words experiments in our paper, you can check and refer
 # Citation
 If this work is helpful, please cite the following paper:
 ```
-@article{Chen2023JSCE,
-    author={Chen, Zihao and Handa,  Hisashi and Shirahama, Kimiaki}.
-    title={JCSE: Contrastive Learning of Japanese Sentence Embeddings and Its Applications},
-    journal={arXiv e-prints 10.48550/arXiv.2301.08193},
-    year={2023},
-}
+
 ```
