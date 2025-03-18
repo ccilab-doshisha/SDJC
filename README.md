@@ -1,6 +1,6 @@
 # Introduction
 This repository contains the data, code, and models for our paper (SDJC). It is built upon Pytorch and Huggingface.
-Due to ethical issues, the educational domain corpus, and downstream task QA bot data are not public now. Please pay your patience for the ethic approvement. (If you want to test your model on the QA bot data, feel free to contact me, we can test your model on our server. My email address: cyjk2101@mail4.doshisha.ac.jp)
+Due to ethical issues, the educational domain corpus, and downstream task QA bot data are not public now. Please pay your patience for the ethic approvement. (If you want to test your model on the QAbot data, feel free to contact me, we can test your model on our server. My email address: cyjk2101@mail4.doshisha.ac.jp)
 
 ## Overview
 Several backbone models pre-trained on general domain datasets can encode a sentence into a widely useful embedding. Such sentence embeddings can be further enhanced by domain adaptation that adapts a backbone model to a specific domain. However, domain adaptation for low-resource languages like Japanese is often difficult due to the scarcity of large-scale labeled datasets. To overcome this, this paper introduces SDJC (Self-supervised Domain adaptation for Japanese sentence embeddings with Contrastive learning) that utilizes a data generator to generate sentences, which have the same syntactic structure to a sentence in an unlabeled specific domain corpus but convey different semantic meanings. Generated sentences are then used to boost contrastive learning that adapts a backbone model to accurately discriminate sentences in the specific domain.
@@ -77,7 +77,7 @@ You can download and directly use the synthetic data in target domain for contra
 
 ### Training
 Run `train.py`. You can define different hyperparameters in your own way.
-In our experiments, we use different save strategies like save steps or save epochs to save multiple checkpoints and find the best one among saved ones.
+In our experiments, we save multiple checkpoints and find the best one among saved ones.
 ```
 python train.py \
     --model_name_or_path <your_model_dir> \
@@ -126,11 +126,28 @@ python main.py\
     --model_name_or_path <your_model_dir>
 ```
 
+Warning: Due to ethical issues, the QAbot data is not public now, but you check the examples in our paper. If you want to test your model on the QAbot data, feel free to contact me, and we can test your model on our server.
+
 ## Relevant Content Words
 For the relevant content words experiments in our paper, you can check and refer the codes and examples from [here](/relevant_content_words).
 
 # Citation
 If this work is helpful, please cite the following paper:
 ```
+@article{chen2025domain,
+  title={Domain Adaptation for Japanese Sentence Embeddings with Contrastive Learning based on Synthetic Sentence Generation},
+  author={Chen, Zihao and Handa, Hisashi and Ohsaki, Miho and Shirahama, Kimiaki},
+  journal={arXiv preprint arXiv:2503.09094},
+  year={2025}
+}
+```
 
+This work is based on our previous work:
+```
+@article{chen2023jcse,
+  title={JCSE: contrastive learning of japanese sentence embeddings and its applications},
+  author={Chen, Zihao and Handa, Hisashi and Shirahama, Kimiaki},
+  journal={arXiv preprint arXiv:2301.08193},
+  year={2023}
+}
 ```
