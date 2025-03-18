@@ -1,7 +1,8 @@
 # It is still under construction, please wait for a few days! We will complete it in these days. (Maybe tomorrow.)
 
 # Introduction
-This repository contains the data, code and models for our paper (SDJC). It is built upon Pytorch and Huggingface.
+This repository contains the data, code, and models for our paper (SDJC). It is built upon Pytorch and Huggingface.
+Due to ethical issues, the educational domain corpus, and downstream task QA bot data are not public now. Please pay your patience for the ethic approvement. (If you want to test your model on the QA bot data, feel free to contact me, we can test your model on our server. My email address: cyjk2101@mail4.doshisha.ac.jp)
 
 ## Overview
 Several backbone models pre-trained on general domain datasets can encode a sentence into a widely useful embedding. Such sentence embeddings can be further enhanced by domain adaptation that adapts a backbone model to a specific domain. However, domain adaptation for low-resource languages like Japanese is often difficult due to the scarcity of large-scale labeled datasets. To overcome this, this paper introduces SDJC (Self-supervised Domain adaptation for Japanese sentence embeddings with Contrastive learning) that utilizes a data generator to generate sentences, which have the same syntactic structure to a sentence in an unlabeled specific domain corpus but convey different semantic meanings. Generated sentences are then used to boost contrastive learning that adapts a backbone model to accurately discriminate sentences in the specific domain.
