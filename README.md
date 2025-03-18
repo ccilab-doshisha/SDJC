@@ -58,7 +58,7 @@ wget https://huggingface.co/datasets/MU-Kindai/datasets-for-JCSE/blob/main/wiki1
 wget https://huggingface.co/datasets/MU-Kindai/datasets-for-JCSE/blob/main/nli_for_simcse.csv 
 ```
 The target domain corpus used in our paper can be downloaded from [here](/data/clinic_corpus.txt) and [here](/data/QAbot_corpus.txt).
-Due to ethical issues, the educational domain corpus is not public now, but you check the examples in our paper.
+Due to ethical issues, the educational domain corpus is not public now, but you can check the examples in our paper.
 
 ### Data generator fine-tune and generate contradictory data
 You can finetune the data generator using the code referring [this one](T5_denoising_training_clinic_domain.py). 
@@ -126,7 +126,7 @@ python main.py\
     --model_name_or_path <your_model_dir>
 ```
 
-Warning: Due to ethical issues, the QAbot data is not public now, but you check the examples in our paper. If you want to test your model on the QAbot data, feel free to contact me, and we can test your model on our server.
+Warning: Due to ethical issues, the QAbot data is not public now, but you can check the examples in our paper. If you want to test your model on the QAbot data, feel free to contact me, and we can test your model on our server.
 
 ## Relevant Content Words
 For the relevant content words experiments in our paper, you can check and refer the codes and examples from [here](/relevant_content_words).
