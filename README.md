@@ -131,6 +131,11 @@ Warning: Due to ethical issues, the QAbot data is not public now, but you can ch
 ## Relevant Content Words
 For the relevant content words experiments in our paper, you can check and refer the codes and examples from [here](/relevant_content_words).
 
+## Contact
+If you have any questions, feel free to contact me. 
+Email address: cyjk2101@mail4.doshisha.ac.jp
+Lab homepage: https://ccilab.doshisha.ac.jp/
+
 # Citation
 If this work is helpful, please cite the following paper:
 ```
