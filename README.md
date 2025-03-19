@@ -1,4 +1,4 @@
-# Introduction (Waiting for completion, I am collecting the trained models and uploading them)
+# Introduction
 This repository contains the data, code, and models for our paper (SDJC). It is built upon Pytorch and Huggingface.
 Due to ethical issues, the educational domain corpus, and downstream task QA bot data are not public now. Please pay your patience for the ethic approvement. (If you want to test your model on the QAbot data, feel free to contact me, we can test your model on our server. My email address: cyjk2101@mail4.doshisha.ac.jp)
 
