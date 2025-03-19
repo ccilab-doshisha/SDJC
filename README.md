@@ -111,6 +111,9 @@ Arguments used to train our models:
 | Method | Arguments |
 | ------ | --------- |
 | [ccilab/SDJC-base-v3-clinic](https://huggingface.co/ccilab/SDJC-base-v3-clinic) | `--hard_negative_weight 0.1 --temp 0.06`|
+| [ccilab/SDJC-base-v3-edu](https://huggingface.co/ccilab/SDJC-base-v3-clinic) | `--hard_negative_weight 0.1 --temp 0.06`|
+| [ccilab/SDJC-large-clinic](https://huggingface.co/ccilab/SDJC-large-clinic) | `--hard_negative_weight 0.1 --temp 0.04`|
+| [ccilab/SDJC-large-edu](https://huggingface.co/ccilab/SDJC-large-edu) | `--hard_negative_weight 0 --temp 0.07`|
 
 
 ### Evaluation
