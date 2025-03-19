@@ -36,8 +36,14 @@ The Japanese sentence embedding models trained by us are listed as follows.
 | Model |
 | ----- |
 | [ccilab/Japanese-SimCSE-BERT-base-v3](https://huggingface.co/ccilab/Japanese-SimCSE-BERT-base-v3) |
+| [ccilab/Japanese-SimCSE-BERT-large-v2](https://huggingface.co/ccilab/Japanese-SimCSE-BERT-large-v2) |
+| [ccilab/Japanese-MixCSE-BERT-base-v3](https://huggingface.co/ccilab/Japanese-MixCSE-BERT-base-v3) |
+| [ccilab/Japanese-MixCSE-BERT-large-v2](https://huggingface.co/ccilab/Japanese-MixCSE-BERT-large-v2) |
+| [ccilab/Japanese-SimCSE-BERT-base-v3-sup](https://huggingface.co/ccilab/Japanese-SimCSE-BERT-base-v3-sup) |
+| [ccilab/Japanese-SimCSE-BERT-large-v2-sup](https://huggingface.co/ccilab/Japanese-SimCSE-BERT-large-v2-sup) |
 
-
+\
+\
 You can also check other Japanese sentence embedding models trained by us in our previous work.
 | Model |
 | ----- |
