@@ -110,14 +110,8 @@ python train.py \
 Arguments used to train our models:
 | Method | Arguments |
 | ------ | --------- |
-| [MU-Kindai/JCSE-clinic-stage1-base](https://huggingface.co/MU-Kindai/JCSE-clinic-stage1-base) | `--learning_rate 5e-5 --hard_negative_weight 0`|
-| [MU-Kindai/JCSE-clinic-final-base](https://huggingface.co/MU-Kindai/JCSE-clinic-final-base) | `--learning_rate 5e-5 --hard_negative_weight 1`|
-| [MU-Kindai/JCSE-clinic-stage1-large](https://huggingface.co/MU-Kindai/JCSE-clinic-stage1-large) | `--learning_rate 1e-5 --hard_negative_weight 0`|
-| [MU-Kindai/JCSE-clinic-final-large](https://huggingface.co/MU-Kindai/JCSE-clinic-final-large) | `--learning_rate 1e-5 --hard_negative_weight 1`|
-| [MU-Kindai/JCSE-edu-stage1-base](https://huggingface.co/MU-Kindai/JCSE-edu-stage1-base) | `--learning_rate 5e-5 --hard_negative_weight 0`|
-| [MU-Kindai/JCSE-edu-final-base](https://huggingface.co/MU-Kindai/JCSE-edu-final-base) | `--learning_rate 5e-5 --hard_negative_weight 1`|
-| [MU-Kindai/JCSE-edu-stage1-large](https://huggingface.co/MU-Kindai/JCSE-edu-stage1-large) | `--learning_rate 1e-5 --hard_negative_weight 0`|
-| [MU-Kindai/JCSE-edu-final-large](https://huggingface.co/MU-Kindai/JCSE-edu-final-large) | `--learning_rate 1e-5 --hard_negative_weight 1`|
+| [ccilab/SDJC-base-v3-clinic](https://huggingface.co/ccilab/SDJC-base-v3-clinic) | `--hard_negative_weight 0.1 --temp 0.06`|
+
 
 ### Evaluation
 For the clinic domain STS tasks in our paper, you can evaluate the embedding models following the commands below:
