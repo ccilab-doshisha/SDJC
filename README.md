@@ -110,14 +110,14 @@ python train.py \
 Arguments used to train our models:
 | Method | Arguments |
 | ------ | --------- |
-| [MU-Kindai/JCSE-clinic-stage1-base](https://huggingface.co/MU-Kindai/JCSE-clinic-stage1-base) | `--train_file clinic_shuffle_for_simcse_top4.csv --learning_rate 5e-5 --hard_negative_weight 0`|
-| [MU-Kindai/JCSE-clinic-final-base](https://huggingface.co/MU-Kindai/JCSE-clinic-final-base) | `--train_file nli_for_simcse.csv --learning_rate 5e-5 --hard_negative_weight 1`|
-| [MU-Kindai/JCSE-clinic-stage1-large](https://huggingface.co/MU-Kindai/JCSE-clinic-stage1-large) | `--train_file clinic_shuffle_for_simcse_top5.csv --learning_rate 1e-5 --hard_negative_weight 0`|
-| [MU-Kindai/JCSE-clinic-final-large](https://huggingface.co/MU-Kindai/JCSE-clinic-final-large) | `--train_file nli_for_simcse.csv --learning_rate 1e-5 --hard_negative_weight 1`|
-| [MU-Kindai/JCSE-edu-stage1-base](https://huggingface.co/MU-Kindai/JCSE-edu-stage1-base) | `--train_file qa_shuffle_for_simcse_top4.csv --learning_rate 5e-5 --hard_negative_weight 0`|
-| [MU-Kindai/JCSE-edu-final-base](https://huggingface.co/MU-Kindai/JCSE-edu-final-base) | `--train_file nli_for_simcse.csv --learning_rate 5e-5 --hard_negative_weight 1`|
-| [MU-Kindai/JCSE-edu-stage1-large](https://huggingface.co/MU-Kindai/JCSE-edu-stage1-large) | `--train_file qa_shuffle_for_simcse_top6.csv --learning_rate 1e-5 --hard_negative_weight 0`|
-| [MU-Kindai/JCSE-edu-final-large](https://huggingface.co/MU-Kindai/JCSE-edu-final-large) | `--train_file nli_for_simcse.csv --learning_rate 1e-5 --hard_negative_weight 1`|
+| [MU-Kindai/JCSE-clinic-stage1-base](https://huggingface.co/MU-Kindai/JCSE-clinic-stage1-base) | `--learning_rate 5e-5 --hard_negative_weight 0`|
+| [MU-Kindai/JCSE-clinic-final-base](https://huggingface.co/MU-Kindai/JCSE-clinic-final-base) | `--learning_rate 5e-5 --hard_negative_weight 1`|
+| [MU-Kindai/JCSE-clinic-stage1-large](https://huggingface.co/MU-Kindai/JCSE-clinic-stage1-large) | `--learning_rate 1e-5 --hard_negative_weight 0`|
+| [MU-Kindai/JCSE-clinic-final-large](https://huggingface.co/MU-Kindai/JCSE-clinic-final-large) | `--learning_rate 1e-5 --hard_negative_weight 1`|
+| [MU-Kindai/JCSE-edu-stage1-base](https://huggingface.co/MU-Kindai/JCSE-edu-stage1-base) | `--learning_rate 5e-5 --hard_negative_weight 0`|
+| [MU-Kindai/JCSE-edu-final-base](https://huggingface.co/MU-Kindai/JCSE-edu-final-base) | `--learning_rate 5e-5 --hard_negative_weight 1`|
+| [MU-Kindai/JCSE-edu-stage1-large](https://huggingface.co/MU-Kindai/JCSE-edu-stage1-large) | `--learning_rate 1e-5 --hard_negative_weight 0`|
+| [MU-Kindai/JCSE-edu-final-large](https://huggingface.co/MU-Kindai/JCSE-edu-final-large) | `--learning_rate 1e-5 --hard_negative_weight 1`|
 
 ### Evaluation
 For the clinic domain STS tasks in our paper, you can evaluate the embedding models following the commands below:
