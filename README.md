@@ -5,7 +5,7 @@ Due to ethical issues, the educational domain corpus, and downstream task QA bot
 My email address: cyjk2101@mail4.doshisha.ac.jp)
 
 ## Overview
-Several backbone models pre-trained on general domain datasets can encode a sentence into a widely useful embedding. Such sentence embeddings can be further enhanced by domain adaptation that adapts a backbone model to a specific domain. However, domain adaptation for low-resource languages like Japanese is often difficult due to the scarcity of large-scale labeled datasets. To overcome this, this paper introduces SDJC (Self-supervised Domain adaptation for Japanese sentence embeddings with Contrastive learning) that utilizes a data generator to generate sentences, which have the same syntactic structure to a sentence in an unlabeled specific domain corpus but convey different semantic meanings. Generated sentences are then used to boost contrastive learning that adapts a backbone model to accurately discriminate sentences in the specific domain.
+While our work does not focus on developing a new general Japanese sentence embedding model, we recognize the potential of our proposed SDJC to enhance current state-of-the-art models. Although recent models have achieved impressive performance, there is still room for improvement on unseen domain-specific downstream tasks. As demonstrated in our work, SDJC successfully elevates the performance of existing state-of-the-art models on domain-specific downstream tasks, showcasing its significance and generality.
 
 ![overall image](/SDJC_overview.png)
 
