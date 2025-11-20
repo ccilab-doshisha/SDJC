@@ -141,6 +141,11 @@ Generate hard negative sentences by replacing noun chunks with a different maski
 ## Relevant Content Words
 For the relevant content words experiments in our paper, you can check and refer the codes and examples from [here](/relevant_content_words).
 
+# License
+The source code in this repository is licensed under the [MIT License](./LICENSE).
+
+The pre-trained models and the datasets provided are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
 ## Contact
 If you have any questions, feel free to contact me. \
 Email address: cyjk2101@mail4.doshisha.ac.jp \
