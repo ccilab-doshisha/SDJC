@@ -68,7 +68,7 @@ wget https://huggingface.co/datasets/MU-Kindai/datasets-for-JCSE/blob/main/wiki1
 wget https://huggingface.co/datasets/MU-Kindai/datasets-for-JCSE/blob/main/nli_for_simcse.csv 
 ```
 The target domain corpus used in our paper can be downloaded from [here](/data/clinic_corpus.txt) and [here](/data/QAbot_corpus.txt).
-Due to ethical issues, the educational domain corpus is not public now, but you can check the examples in our paper.
+
 
 ### Data generator fine-tune and generate contradictory data
 You can finetune the data generator using the code referring [this one](T5_denoising_training_clinic_domain.py). 
