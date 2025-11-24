@@ -178,8 +178,11 @@ peft_config = LoraConfig(
 | [ccilab/SDJC-GTE-Qwen2-7B-instruct-clinic](https://huggingface.co/ccilab/SDJC-GTE-Qwen2-7B-instruct-clinic) | `--temp 0.05 --hard_negative_weight 0.1`|
 | [ccilab/SDJC-GTE-Qwen2-7B-instruct-edu](https://huggingface.co/ccilab/SDJC-GTE-Qwen2-7B-instruct-edu) | `--temp 0.05 --hard_negative_weight 0.1`|
 
+The new example training code with Sentence Transformers: [sample code](finetune_for_Qwen_load_basemodel.py)
+
 # License
 The source code in this repository and the pre-trained models are licensed under the [MIT License](./LICENSE).
+
 The datasets provided are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 # Citation
