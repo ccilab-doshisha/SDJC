@@ -73,9 +73,9 @@ The target domain corpus used in our paper can be downloaded from [here](/data/c
 ### Data generator fine-tune and generate contradictory data
 You can finetune the data generator using the code referring [this one](T5_denoising_training_clinic_domain.py). 
 
-You can generate contradictory data referring the following code from [here](/data_generation_for_unsup.ipynb).
+You can generate contradictory data referring to the following code from [here](/data_generation_for_unsup.ipynb).
 
-You can download and directly use the synthetic data in target domain for contrastive learning from the following list.
+You can download and directly use the synthetic data in the target domain for contrastive learning from the following list.
 |Synthetic Data|
 |--------------|
 |[clinic_domain_top4](https://huggingface.co/datasets/MU-Kindai/datasets-for-JCSE/blob/main/clinic_shuffle_for_simcse_top4.csv)|
@@ -152,12 +152,31 @@ We conducted additional experiments to further validate the effectiveness and ro
 The models and their arguments:
 | Model | Arguments |
 | ------ | --------- |
-| [ccilab/SDJC-mE5-base-clinic](https://huggingface.co/ccilab/SDJC-mE5-base-clinic) | `--hard_negative_weight 0.06 --temp 0.1`|
-| [ccilab/SDJC-mE5-base-edu](https://huggingface.co/ccilab/SDJC-mE5-base-edu) | `--hard_negative_weight 0.02 --temp 0.1`|
-| [ccilab/SDJC-mE5-large-clinic](https://huggingface.co/ccilab/SDJC-mE5-large-clinic) | `--hard_negative_weight 0.04 --temp 0.1`|
-| [ccilab/SDJC-mE5-large-edu](https://huggingface.co/ccilab/SDJC-large-edu) | `--hard_negative_weight 0.01 --temp 0.1`|
-| [ccilab/SDJC-BGE-M3-clinic](https://huggingface.co/ccilab/SDJC-BGE-M3-clinic) | `--hard_negative_weight 0.04 --temp 0.1`|
-| [ccilab/SDJC-BGE-M3-edu](https://huggingface.co/ccilab/SDJC-BGE-M3-edu) | `--hard_negative_weight 0.05 --temp 0.1`|
+| [ccilab/SDJC-mE5-base-clinic](https://huggingface.co/ccilab/SDJC-mE5-base-clinic) | `--temp 0.06 --hard_negative_weight 0.1`|
+| [ccilab/SDJC-mE5-base-edu](https://huggingface.co/ccilab/SDJC-mE5-base-edu) | `--temp 0.02 --hard_negative_weight 0.1`|
+| [ccilab/SDJC-mE5-large-clinic](https://huggingface.co/ccilab/SDJC-mE5-large-clinic) | `--temp 0.04 --hard_negative_weight 0.1`|
+| [ccilab/SDJC-mE5-large-edu](https://huggingface.co/ccilab/SDJC-large-edu) | `--temp 0.01 --hard_negative_weight 0.1`|
+| [ccilab/SDJC-BGE-M3-clinic](https://huggingface.co/ccilab/SDJC-BGE-M3-clinic) | `--temp 0.04 --hard_negative_weight 0.1`|
+| [ccilab/SDJC-BGE-M3-edu](https://huggingface.co/ccilab/SDJC-BGE-M3-edu) | `--temp 0.05 --hard_negative_weight 0.1`|
+
+We apply LORA with GTE-Qwen2-7B-instruct:
+
+```
+peft_config = LoraConfig(
+                task_type=TaskType.FEATURE_EXTRACTION,
+                inference_mode=False,
+                r=32,
+                lora_alpha=64,
+                lora_dropout=0.1,
+                target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
+            )
+```
+
+
+| Model | Arguments |
+| ------ | --------- |
+| [ccilab/SDJC-GTE-Qwen2-7B-instruct-clinic](https://huggingface.co/ccilab/SDJC-GTE-Qwen2-7B-instruct-clinic) | `--temp 0.05 --hard_negative_weight 0.1`|
+| [ccilab/SDJC-GTE-Qwen2-7B-instruct-edu](https://huggingface.co/ccilab/SDJC-GTE-Qwen2-7B-instruct-edu) | `--temp 0.05 --hard_negative_weight 0.1`|
 
 # License
 The source code in this repository and the pre-trained models are licensed under the [MIT License](./LICENSE).
