@@ -108,7 +108,7 @@ python train.py \
     --do_train \
 ```
 Arguments used to train our models:
-| Method | Arguments |
+| Model | Arguments |
 | ------ | --------- |
 | [ccilab/SDJC-base-v3-clinic](https://huggingface.co/ccilab/SDJC-base-v3-clinic) | `--hard_negative_weight 0.1 --temp 0.06`|
 | [ccilab/SDJC-base-v3-edu](https://huggingface.co/ccilab/SDJC-base-v3-edu) | `--hard_negative_weight 0 --temp 0.02`|
@@ -139,17 +139,29 @@ Warning: Due to ethical issues, the QAbot data is not public now, but you can ch
 Generate hard negative sentences by replacing noun chunks with a different masking ratio. [sample code](iterative_generation_sample_mask.py)
 
 ## Relevant Content Words
-For the relevant content words experiments in our paper, you can check and refer the codes and examples from [here](/relevant_content_words).
-
-# License
-The source code in this repository and the pre-trained models are licensed under the [MIT License](./LICENSE).
-
-The datasets provided are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+For the relevant content words experiments in our paper, you can check and refer to the codes and examples from [here](/relevant_content_words).
 
 ## Contact
 If you have any questions, feel free to contact me. \
 Email address: cyjk2101@mail4.doshisha.ac.jp \
 Lab homepage: [https://ccilab.doshisha.ac.jp](https://ccilab.doshisha.ac.jp/)/ 
+
+# New Additional Experiments
+We conducted additional experiments to further validate the effectiveness and robustness of SDJC across multilingual settings. These experiments evaluate four representative multilingual embedding models: mE5-base, mE5-large, BGE-M3, and GTE-Qwen2-7B-instruct under consistent inference and training configurations. All models follow their official instruction formats and pooling strategies, and we apply contrastive learning for domain adaptation with model-specific optimization settings. These results provide a comprehensive and reproducible comparison of multilingual sentence embedding performance under the SDJC framework.
+
+The models and their arguments:
+| Model | Arguments |
+| ------ | --------- |
+| [ccilab/SDJC-mE5-base-clinic](https://huggingface.co/ccilab/SDJC-mE5-base-clinic) | `--hard_negative_weight 0.06 --temp 0.1`|
+| [ccilab/SDJC-mE5-base-edu](https://huggingface.co/ccilab/SDJC-mE5-base-edu) | `--hard_negative_weight 0.02 --temp 0.1`|
+| [ccilab/SDJC-mE5-large-clinic](https://huggingface.co/ccilab/SDJC-mE5-large-clinic) | `--hard_negative_weight 0.04 --temp 0.1`|
+| [ccilab/SDJC-mE5-large-edu](https://huggingface.co/ccilab/SDJC-large-edu) | `--hard_negative_weight 0.01 --temp 0.1`|
+| [ccilab/SDJC-BGE-M3-clinic](https://huggingface.co/ccilab/SDJC-BGE-M3-clinic) | `--hard_negative_weight 0.04 --temp 0.1`|
+| [ccilab/SDJC-BGE-M3-edu](https://huggingface.co/ccilab/SDJC-BGE-M3-edu) | `--hard_negative_weight 0.05 --temp 0.1`|
+
+# License
+The source code in this repository and the pre-trained models are licensed under the [MIT License](./LICENSE).
+The datasets provided are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 # Citation
 If this work is helpful, please cite the following paper:
