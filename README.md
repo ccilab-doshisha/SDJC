@@ -135,7 +135,10 @@ python main.py\
     --model_name_or_path <your_model_dir>
 ```
 
-Warning: Due to ethical issues, the QAbot data is not public now, but you can check the examples in our paper. If you want to test your model on the QAbot data, feel free to contact me, and we can test it on our server.
+⚠️ **Warning**
+Due to ethical considerations, the full QABot dataset cannot be publicly released. However, a de-identified and anonymized subset is available at (/data/annoymized_educational_domain_data/annoymized_QABot_dataset_subset.csv).
+
+> Additional examples can be found in our paper. If you wish to evaluate your model on the complete QABot dataset, please feel free to contact us. We can run the evaluation on our server and share the results.
 
 ### Ablation study
 Generate hard negative sentences by replacing noun chunks with a different masking ratio. [sample code](iterative_generation_sample_mask.py)
