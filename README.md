@@ -69,7 +69,7 @@ wget https://huggingface.co/datasets/MU-Kindai/datasets-for-JCSE/blob/main/nli_f
 ```
 The target domain corpus used in our paper can be downloaded from [here](/data/clinic_corpus.txt) and [here](/data/annoymized_educational_domain_data/annoymized_educational_domain_corpus_subset.txt).
 > ⚠️ **Important Notice**  
-> The educational computer science corpus provided here is a de-identified and anonymized subset of the original dataset. Owing to ethical considerations, the complete corpus cannot be publicly distributed. Scripts describing the data collection and preprocessing procedures are included in this repository for reference.
+> The educational computer science domain corpus provided here is a de-identified and anonymized subset of the original corpus. Owing to ethical considerations, the complete corpus cannot be publicly distributed. Scripts describing the data collection and preprocessing procedures are included in this repository for reference.
 
 
 ### Data generator fine-tune and generate contradictory data
@@ -136,7 +136,7 @@ python main.py\
 ```
 
 ⚠️ **Warning**
-Due to ethical considerations, the full QABot dataset cannot be publicly released. However, a de-identified and anonymized subset is available at (/data/annoymized_educational_domain_data/annoymized_QABot_dataset_subset.csv).
+Due to ethical considerations, the full QABot dataset cannot be publicly released. However, a de-identified and anonymized subset is available at [here](/data/annoymized_educational_domain_data/annoymized_QABot_dataset_subset.csv).
 
 > Additional examples can be found in our paper. If you wish to evaluate your model on the complete QABot dataset, please feel free to contact us. We can run the evaluation on our server and share the results.
 
