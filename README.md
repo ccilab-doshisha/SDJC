@@ -70,6 +70,7 @@ wget https://huggingface.co/datasets/MU-Kindai/datasets-for-JCSE/blob/main/nli_f
 The target domain corpus used in our paper can be downloaded from [here](/data/clinic_corpus.txt) and [here](/data/annoymized_educational_domain_data/annoymized_educational_domain_corpus_subset.txt).
 > ⚠️ **Important Notice**  
 > The educational computer science domain corpus provided here is a de-identified and anonymized subset of the original corpus. Owing to ethical considerations, the complete corpus cannot be publicly distributed. Scripts describing the data collection and preprocessing procedures are included in this repository for reference.
+The script for building a corpus is [here](script_build_corpus_reference.py)
 
 
 ### Data generator fine-tune and generate contradictory data
