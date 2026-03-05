@@ -76,7 +76,7 @@ The reference script used to construct the corpus is available [here](script_bui
 ### Data generator fine-tune and generate contradictory data
 You can finetune the data generator using the code referring [this one](T5_denoising_training_clinic_domain.py). 
 
-You can generate contradictory data referring to the following code from [here](/data_generation_for_unsup.ipynb).
+You can generate hard negative sentences referring to the following code from [here](/data_generation_for_unsup.ipynb).
 
 You can download and directly use the synthetic data in the target domain for contrastive learning from the following list.
 |Synthetic Data|
