@@ -1,7 +1,7 @@
 # Introduction
 This repository contains the data, code, and models for our paper (SDJC). It is built upon Pytorch and Huggingface.
 Due to ethical issues, the downstream task QABot dataset is not public now. Please pay your patience for the ethic approvement. \
-(If you want to test your model on the QABot data, feel free to contact me, we can test your model on our server. 
+(If you want to test your model on the whole QABot data, feel free to contact me, we can test your model on our server. 
 My email address: cyjk2101@mail4.doshisha.ac.jp)
 
 ## Overview
