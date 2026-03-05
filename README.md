@@ -73,7 +73,7 @@ The target domain corpus used in our paper can be downloaded from [here](/data/c
 The reference script used to construct the corpus is available [here](script_build_corpus_reference.py).
 
 
-### Data generator fine-tune and generate contradictory data
+### Data generator fine-tune and generate hard negative sentences
 You can finetune the data generator using the code referring [this one](T5_denoising_training_clinic_domain.py). 
 
 You can generate hard negative sentences referring to the following code from [here](/data_generation_for_unsup.ipynb).
